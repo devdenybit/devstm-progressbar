@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.devsty.devsty">
+    package="com.normal.normal">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
-        android:name="com.unisob.vclibs.Applicationclass"
+        android:name="com.gitub.normal.Applicationclass"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -23,7 +23,7 @@
         android:theme="@style/Theme.DevSty"
         tools:targetApi="32">
         <activity
-            android:name=".SplashActivity"
+            android:name="com.normal.normal.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,9 +32,16 @@
         </activity>
 
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:name="com.normal.normal.MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.gitub.normal.myadscls.MySplashActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.gitub.normal.myadscls.Sub_SplashActivity"
+            android:exported="false"/>
 
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"

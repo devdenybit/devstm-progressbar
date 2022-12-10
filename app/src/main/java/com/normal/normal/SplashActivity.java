@@ -1,6 +1,6 @@
-package com.devsty.devsty;
+package com.normal.normal;
 
-import static com.unisob.vclibs.mads.SplashActivity.All_Data;
+import static com.gitub.normal.myadscls.MySplashActivity.All_Data;
 
 import androidx.appcompat.app.AppCompatActivity;
 

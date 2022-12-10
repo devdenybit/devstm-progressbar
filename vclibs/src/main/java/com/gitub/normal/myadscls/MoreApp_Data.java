@@ -1,4 +1,4 @@
-package com.unisob.vclibs.mads;
+package com.gitub.normal.myadscls;
 
 public class MoreApp_Data {
     String app_id,app_name,app_packageName,app_logo,app_status,app_banner,app_shortDecription;

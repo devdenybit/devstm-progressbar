@@ -1,6 +1,6 @@
-package com.unisob.vclibs.ads;
+package com.gitub.normal.mysads;
 
-import static com.unisob.vclibs.BuildConfig.DEBUG;
+import static com.gitub.normal.BuildConfig.DEBUG;
 
 import android.content.Context;
 import android.util.Log;

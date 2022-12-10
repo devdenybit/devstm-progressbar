@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:text="Dev Screen"
-        android:textColor="@color/black"
+        android:text="Normal"
+        android:textColor="@color/teal_700"
         android:textSize="40dp" />
 
 

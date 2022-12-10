@@ -1,4 +1,4 @@
-package com.unisob.vclibs;
+package com.gitub.normal;
 
 
 import android.app.Application;
@@ -14,7 +14,7 @@ import com.facebook.ads.AudienceNetworkAds;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.unisob.vclibs.ads.AudienceNetworkInitializeHelper;
+import com.gitub.normal.mysads.AudienceNetworkInitializeHelper;
 
 import io.github.inflationx.calligraphy3.CalligraphyConfig;
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor;

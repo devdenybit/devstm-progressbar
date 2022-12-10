@@ -1,10 +1,9 @@
-package com.unisob.vclibs.mads;
+package com.gitub.normal.myadscls;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
@@ -17,7 +16,7 @@ import com.facebook.ads.NativeAdLayout;
 import com.facebook.ads.NativeBannerAd;
 import com.google.android.gms.ads.nativead.NativeAdView;
 //import com.startapp.android.publish.ads.nativead.NativeAdDetails;
-import com.unisob.vclibs.R;
+import com.gitub.normal.R;
 
 import java.util.ArrayList;
 import java.util.List;

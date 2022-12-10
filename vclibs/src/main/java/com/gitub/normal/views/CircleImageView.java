@@ -1,4 +1,4 @@
-package com.unisob.vclibs.views;
+package com.gitub.normal.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -21,7 +21,7 @@ import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.DrawableRes;
 
-import com.unisob.vclibs.R;
+import com.gitub.normal.R;
 
 
 public class CircleImageView extends androidx.appcompat.widget.AppCompatImageView {

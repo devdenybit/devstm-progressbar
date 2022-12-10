@@ -1,15 +1,13 @@
-package com.unisob.vclibs.mads;
+package com.gitub.normal.myadscls;
 
-import static com.unisob.vclibs.mads.AppManage.ADMOB_N0;
-import static com.unisob.vclibs.mads.AppManage.FACEBOOK_N;
-import static com.unisob.vclibs.mads.AppManage.Privacy_policy_show_every_time;
-import static com.unisob.vclibs.mads.AppManage.app_onesingle_appid;
+import static com.gitub.normal.myadscls.MyAppManage.ADMOB_N0;
+import static com.gitub.normal.myadscls.MyAppManage.FACEBOOK_N;
+import static com.gitub.normal.myadscls.MyAppManage.app_onesingle_appid;
 
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
@@ -27,12 +25,12 @@ import android.widget.TextView;
 import com.onesignal.OneSignal;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
-import com.unisob.vclibs.R;
+import com.gitub.normal.R;
 // import com.unisob.vclibs.activties.PravacyPolicyActivity;
 
 import org.json.JSONObject;
 
-public class SplashActivity extends ADS_SplashActivity {
+public class MySplashActivity extends Sub_SplashActivity {
 
     Handler handlerr = new Handler(Looper.getMainLooper());
 
@@ -53,7 +51,6 @@ public class SplashActivity extends ADS_SplashActivity {
         getWindow().setStatusBarColor(ContextCompat.getColor(this, android.R.color.transparent));
 
         setContentView(R.layout.mads_activity_splash);
-
     }
 
     public static void All_Data(Activity context, Intent intent){
@@ -65,9 +62,8 @@ public class SplashActivity extends ADS_SplashActivity {
                 OneSignal.initWithContext(context);
                 OneSignal.setAppId(app_onesingle_appid);
 
-                //AppManage.getInstance(context).showNativeBanner((ViewGroup) findViewById(R.id.banner_container), ADMOB_B[0], FACEBOOK_NB[0]);
-                AppManage.getInstance(context).showNative((ViewGroup) context.findViewById(R.id.native_container), ADMOB_N0, FACEBOOK_N[0]);
-                AppManage.getInstance(context).loadInterstitialAd(context);
+                MyAppManage.getInstance(context).showNative((ViewGroup) context.findViewById(R.id.native_container), ADMOB_N0, FACEBOOK_N[0]);
+                MyAppManage.getInstance(context).loadInterstitialAd(context);
 
                 new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
                     @Override
@@ -89,7 +85,7 @@ public class SplashActivity extends ADS_SplashActivity {
 
             @Override
             public void onReload() {
-                context.startActivity(new Intent(context, SplashActivity.class));
+                context.startActivity(new Intent(context, MySplashActivity.class));
                 context.finish();
             }
 

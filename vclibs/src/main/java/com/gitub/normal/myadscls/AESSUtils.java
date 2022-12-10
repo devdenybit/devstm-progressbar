@@ -1,4 +1,4 @@
-package com.unisob.vclibs.mads;
+package com.gitub.normal.myadscls;
 
 import android.app.Activity;
 

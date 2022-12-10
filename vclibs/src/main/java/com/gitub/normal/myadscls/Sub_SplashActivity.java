@@ -1,6 +1,6 @@
-package com.unisob.vclibs.mads;
+package com.gitub.normal.myadscls;
 
-import static com.unisob.vclibs.mads.AppManage.mysharedpreferences;
+import static com.gitub.normal.myadscls.MyAppManage.mysharedpreferences;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -16,7 +16,6 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Base64;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -28,8 +27,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.unisob.vclibs.BuildConfig;
-import com.unisob.vclibs.R;
+import com.gitub.normal.BuildConfig;
+import com.gitub.normal.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -43,7 +42,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.TimeZone;
 
-public class ADS_SplashActivity extends AppCompatActivity {
+public class Sub_SplashActivity extends AppCompatActivity {
 
     public static boolean need_internet = false;
     public static String bytemode = "";
@@ -218,7 +217,7 @@ public class ADS_SplashActivity extends AppCompatActivity {
                                 }
                             }
 
-                            AppManage.getInstance(activity).getResponseFromPref(new getDataListner() {
+                            MyAppManage.getInstance(activity).getResponseFromPref(new getDataListner() {
                                 @Override
                                 public void onSuccess() {
                                     boolean splash_ad2 = mysharedpreferences.getBoolean("app_AppOpenAdStatus", false);

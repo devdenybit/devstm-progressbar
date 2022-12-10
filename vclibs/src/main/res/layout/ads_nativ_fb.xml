@@ -138,7 +138,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="@dimen/_5sdp"
-                    android:background="#1E86D8"
+                    android:background="#3F51B5"
                     android:gravity="center"
                     android:text="Continue"
                     android:textColor="@android:color/white"

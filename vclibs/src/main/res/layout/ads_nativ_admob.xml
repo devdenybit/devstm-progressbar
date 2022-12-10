@@ -205,7 +205,7 @@
                         android:layout_height="50dp"
                         android:layout_alignParentBottom="true"
                         android:layout_marginTop="@dimen/_5sdp"
-                        android:background="#ff5b5a"
+                        android:background="@drawable/grdiy"
                         android:gravity="center"
                         android:text="Continue"
                         android:textAllCaps="false"
